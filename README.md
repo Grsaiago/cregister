@@ -4,6 +4,19 @@ cregister - read as 'see register' - is a C library that exposes functions
 to read values from x86 GPRs (General Purpose Registers) at run time
 (the pun is absolutely intended xD).
 
+## Project Structure
+
+```sh
+cregister/
+|- lib/ # 
+    |- cregister.h # main header file, whould be included if you want to use it.
+|- obj/ # Where the transitive dependencies are placed.
+|- src/ # Where the implementation lives.
+|- libcregister.a # The eventualy generated archive file.
+|- README.md # This file xD.
+|- Makefile # The build file.
+```
+
 ## Supported Registers
 
 The lib currently supports reading values from the following registers:
@@ -37,19 +50,6 @@ The current available rules are:
 - test      Create the test executable
 - clean     Deletes the transitive dependencies (the .o files and any test binaries)
 - fclean    Deletes the transitive dependencies and the archive file (.o and .a)
-
-## Project Structure
-
-```sh
-cregister/
-|- lib/ # 
-    |- cregister.h # main header file, whould be included if you want to use it.
-|- obj/ # Where the transitive dependencies are placed.
-|- src/ # Where the implementation lives.
-|- libcregister.a # The eventualy generated archive file.
-|- README.md # This file xD.
-|- Makefile # The build file.
-```
 
 ## License
 
