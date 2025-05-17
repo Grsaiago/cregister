@@ -4,7 +4,6 @@
 # include <stddef.h>
 # include <assert.h>
 
-void	test(void);
 size_t	get_rax(void);
 size_t	get_rcx(void);
 size_t	get_rdx(void);

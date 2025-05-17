@@ -9,7 +9,7 @@ OBJS = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRCS))
 
 CC = gcc
 
-CFLAGS = -g -masm=intel -Wall -Wextra -Werror
+CFLAGS = -g -Wall -Wextra -Werror
 
 .PHONY: all
 all: help
