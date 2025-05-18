@@ -1,8 +1,6 @@
 #ifndef CREGISTER
 # define CREGISTER
-# include <stdio.h>
 # include <stddef.h>
-# include <assert.h>
 
 size_t	get_rax(void);
 size_t	get_rcx(void);
